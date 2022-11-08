@@ -84,14 +84,17 @@ const SignUp = () => {
                 <div className="form-control mt-6">
                   <button className="btn btn-primary">Register Now</button>
                 </div>
+                <div className="form-control mt-6">
+                <button onClick={handleGoogleSubmit} className="btn btn-primary mb-8 mr-2">Google Sign Up</button> 
+                </div>
               </div>
             </div>
           </div>
           
         </form>
           
-        <button onClick={handleGoogleSubmit} className="btn btn-primary mb-8 mr-2">Google Sign Up</button>  
-              <button className="btn btn-primary mb-8">Git Hub Sign Up </button>  
+        
+                
          </div>
       );
   };

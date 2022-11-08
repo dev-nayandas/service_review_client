@@ -76,7 +76,7 @@ const Login = () => {
                         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                       </label>
                       <label className="label">
-                        <p> New to Delta Learning Hub? </p><a href="./register" className="label-text-alt link link-hover">Register Now</a>
+                        <p> New to Dr. Smith? </p><a href="./signup" className="label-text-alt link link-hover">Register Now</a>
                       </label>
                     
                     </div>

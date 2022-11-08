@@ -3,6 +3,9 @@ import Main from "../../Layout/Main";
 import AddService from "../../Pages/AddService/AddService";
 import Blogs from "../../Pages/Blogs/Blogs";
 import Home from "../../Pages/Home/Home/Home";
+import Service from "../../Pages/Home/Service/Service";
+import ServiceContainer from "../../Pages/Home/ServiceContainer/ServiceContainer";
+import Services from "../../Pages/Home/Services/Services";
 import Login from "../../Pages/Login/Login";
 import MyReviews from "../../Pages/MyReviews/MyReviews";
 import SignUp from "../../Pages/SignUp/SignUp";
@@ -15,10 +18,12 @@ const router = createBrowserRouter([
       children: [
         {
             path: '/',
+            
             element: <Home></Home>
         },
         {
             path: '/home',
+         
             element: <Home></Home>
         },
         {
@@ -41,6 +46,21 @@ const router = createBrowserRouter([
         {
             path: '/blogs',
             element: <Blogs></Blogs>
+        },
+        {
+            path: '/service',
+        
+            element: <Service></Service>
+        },
+        {
+            path: '/services',
+           
+            element: <Services></Services>
+        },
+        {
+            path: '/serviceContainer',
+           
+            element: <ServiceContainer></ServiceContainer>
         },
       ],
     }
