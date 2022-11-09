@@ -42,7 +42,8 @@ const router = createBrowserRouter([
         },
         {
             path: '/addService',
-            element: <AddService></AddService>
+            element:<PrivateRoute><AddService></AddService></PrivateRoute>
+             
         },
         {
             path: '/blogs',
