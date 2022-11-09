@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const Service = ({service}) => {
     console.log(service)
@@ -15,7 +15,9 @@ const Service = ({service}) => {
     <h2 className="card-title">{name}</h2>
     <p>{title}</p>
     <div className="card-actions">
-      <button className="btn btn-primary">View Details</button>
+    <Link to={`/service/${_id}`}>
+   <button className="btn btn-primary">View Details</button>
+   </Link>
     </div>
   </div>
 </div>

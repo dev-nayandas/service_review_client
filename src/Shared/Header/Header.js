@@ -28,7 +28,7 @@ const Header = () => {
        
         {
               user?.email?
-         <div>
+         <div className='mt-2'>
                  <Link className='link' to='/myreviews'>My Reviews</Link>
                  <Link className='link' to='/addService'>Add Service</Link>
               <Link onClick={handleSignOut} className="link">Log Out</Link>
