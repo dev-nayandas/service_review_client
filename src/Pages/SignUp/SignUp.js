@@ -3,11 +3,13 @@ import { GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
+import useTitle from '../../Hooks/UseTitle';
 
 const SignUp = () => {
     const {user, googleSignIn,createUser } = useContext(AuthContext);
     console.log(createUser)
     const navigate = useNavigate();
+    useTitle('Sign Up');
     const googleProvider = new GoogleAuthProvider();
     const handleGoogleSubmit = () =>{
      

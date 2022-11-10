@@ -2,8 +2,10 @@ import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+import useTitle from '../../../Hooks/UseTitle';
 
 const Service = ({service}) => {
+ 
     console.log(service)
     const {_id,img,price,title, name} = service;
  

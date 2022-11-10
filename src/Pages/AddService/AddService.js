@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useTitle from '../../Hooks/UseTitle';
 
 const AddService = () => {
+    useTitle('Add Service');
 
   
     const handleSubmit = event => {
