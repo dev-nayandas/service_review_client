@@ -7,6 +7,7 @@ import Service from "../../Pages/Home/Service/Service";
 import ServiceContainer from "../../Pages/Home/ServiceContainer/ServiceContainer";
 import Services from "../../Pages/Home/Services/Services";
 import Login from "../../Pages/Login/Login";
+import EditReview from "../../Pages/MyReviews/EditReview/EditReview";
 import MyReviews from "../../Pages/MyReviews/MyReviews";
 import SignUp from "../../Pages/SignUp/SignUp";
 import ServiceDetails from "../../ServideDetails/ServiceDetails";
@@ -72,6 +73,11 @@ const router = createBrowserRouter([
             path: '/serviceContainer',
            
             element: <ServiceContainer></ServiceContainer>
+        },
+        {
+            path: '/editReview',
+           
+            element:<EditReview></EditReview>
         },
       ],
     }

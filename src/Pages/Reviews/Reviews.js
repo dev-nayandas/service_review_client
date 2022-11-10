@@ -38,7 +38,7 @@ const Reviews = ({review}) => {
      </td>
      <td>
    
-       <span className="badge badge-ghost badge-sm">{reviewText}</span>
+       <span className="badge badge-ghost badge-sm text-xl">{reviewText}</span>
      </td>
    
     

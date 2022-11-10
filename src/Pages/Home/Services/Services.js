@@ -15,7 +15,7 @@ const Services = () => {
  const sort = services.slice(0,3)
     return (
         <div className='bg-gold-500'>
-            <h1 className='text-4xl text-center '>Choose your desire service</h1>
+            <h1 className='text-5xl text-center mt-5 mb-5 text-purple-800 '>Choose your desire service</h1>
           <div className='  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap'>
             {
                 sort.map(service =><Service

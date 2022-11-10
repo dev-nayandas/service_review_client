@@ -1,5 +1,6 @@
 import { info } from 'daisyui/src/colors';
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Contexts/AuthProvider/AuthProvider';
 
 const ReviewTable = ({review}) => {
@@ -34,7 +35,9 @@ const ReviewTable = ({review}) => {
     <p>Review : {reviewText}</p>
     <div className="card-actions justify-end">
     <button onClick={() =>handleDelete(_id)} className="btn btn-secondary">Delete</button>
-    <button className="btn btn-accent">Update</button>
+   <Link to="/editReview">
+      <button className="btn btn-accent">Edit Review</button>
+   </Link>
     </div>
   </div>
 </div>
