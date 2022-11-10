@@ -10,7 +10,7 @@ const ReviewTable = ({review}) => {
     const handleDelete = _id => {
         const procced = window.confirm('Are you sure you want to delete this review?');
         if(procced){
-          fetch(`http://localhost:5000/reviews/${_id}`, {
+          fetch(`https://service-review-assignment-11-server.vercel.app/reviews/${_id}`, {
             method: 'DELETE',
 
           })
