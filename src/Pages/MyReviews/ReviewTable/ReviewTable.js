@@ -1,11 +1,10 @@
 import React from 'react';
 
-const Reviews = ({review}) => {
-    console.log(review)
+const ReviewTable = ({review}) => {
+    console.log(review);
     const {img, reviewText, reviewerName} = review;
     return (
         <div>
-          
             <div>
             <div className='text-brown-800 bg-base-100'>
          
@@ -40,7 +39,10 @@ const Reviews = ({review}) => {
    
        <span className="badge badge-ghost badge-sm">{reviewText}</span>
      </td>
-   
+   <td>
+   <button className="btn btn-secondary mr-2">Delete</button>
+<button className="btn btn-accent">Update</button>
+   </td>
     
    </tr>
   
@@ -57,4 +59,4 @@ const Reviews = ({review}) => {
     );
 };
 
-export default Reviews;
+export default ReviewTable;
