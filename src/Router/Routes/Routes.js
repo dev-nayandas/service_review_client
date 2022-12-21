@@ -14,74 +14,81 @@ import ServiceDetails from "../../ServideDetails/ServiceDetails";
 import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
-    { 
-      path: '/',
-      element: <Main></Main>,
-      children: [
-        {
-            path: '/',
-            
-            element: <Home></Home>
-        },
-        {
-            path: '/home',
-         
-            element: <Home></Home>
-        },
-        {
-            path: '/login',
-            element: <Login></Login>
-        },
-        {
-            path: '/signup',
-            element: <SignUp></SignUp>
-        },
-        {
-            path: '/myreviews',
-            
-            element: <PrivateRoute><MyReviews></MyReviews></PrivateRoute>
-            
-        },
-        {
-            path: '/addService',
-            element:<PrivateRoute><AddService></AddService></PrivateRoute>
-             
-        },
-        {
-            path: '/blogs',
-            element: <Blogs></Blogs>
-        },
-        {
-            path: '/service',
-        
-            element: <Service></Service>
-        },
-        {
-            path: '/services',
-           
-            element: <Services></Services>
-        },
-        {
-            path: '/service/:id',
-            loader: async ({params})=>{
-                console.log(params.id)
-                return fetch (`https://service-review-assignment-11-server.vercel.app/services/${params.id}`)
-            },
-            element: <ServiceDetails></ServiceDetails>
-        },
-        {
-            path: '/serviceContainer',
-           
-            element: <ServiceContainer></ServiceContainer>
-        },
-        {
-            path: '/editReview',
-           
-            element:<EditReview></EditReview>
-        },
-      ],
-    }
+  {
+    path: "/",
+    element: <Main></Main>,
+    children: [
+      {
+        path: "/",
 
-  ])
+        element: <Home></Home>,
+      },
+      {
+        path: "/home",
+
+        element: <Home></Home>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/signup",
+        element: <SignUp></SignUp>,
+      },
+      {
+        path: "/myreviews",
+
+        element: (
+          <PrivateRoute>
+            <MyReviews></MyReviews>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/addService",
+        element: (
+          <PrivateRoute>
+            <AddService></AddService>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/blogs",
+        element: <Blogs></Blogs>,
+      },
+      {
+        path: "/service",
+
+        element: <Service></Service>,
+      },
+      {
+        path: "/services",
+
+        element: <Services></Services>,
+      },
+      {
+        path: "/service/:id",
+        loader: async ({ params }) => {
+          console.log(params.id);
+          return fetch(
+            `https://service-review-assignment-11-server.vercel.app/services/${params.id}`
+          );
+        },
+        element: <ServiceDetails></ServiceDetails>,
+      },
+      {
+        path: "/serviceContainer",
+
+        element: <ServiceContainer></ServiceContainer>,
+      },
+      {
+        path: "/editReview",
+
+        element: <EditReview></EditReview>,
+      },
+    ],
+  },
+]);
 
 export default router;
