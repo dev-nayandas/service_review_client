@@ -60,10 +60,16 @@ const Login = () => {
             <form onSubmit={handleSubmit} className="hero min-h-screen bg-base-200">
               
               <div className="hero-content flex-col lg:flex-row-reverse">
+          
               
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                <h1 className='text-primary'>User Credential For Test</h1>
+                <h1>email address: akash@gmail.com</h1>
+                <h1>Password: 0123456</h1>
                   <div className="card-body">
+                  
                     <div className="form-control">
+                    
                       <label className="label">
                         <span className="label-text">Email</span>
                       </label>
