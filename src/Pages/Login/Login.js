@@ -65,7 +65,7 @@ const Login = () => {
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                 <h1 className='text-primary'>User Credential For Test</h1>
                 <h1>email address: akash@gmail.com</h1>
-                <h1>Password: 0123456</h1>
+                <h1>Password: 123456</h1>
                   <div className="card-body">
                   
                     <div className="form-control">

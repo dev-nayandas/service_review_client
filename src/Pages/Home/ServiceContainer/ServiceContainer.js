@@ -11,7 +11,7 @@ const ServiceContainer = () => {
   return (
     <div className="bg-gold-500">
       <h1 className="text-4xl text-center ">Choose your desire service</h1>
-      <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap">
+      <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         {services.map((service) => (
           <ServiceCard key={service._id} service={service}></ServiceCard>
         ))}
